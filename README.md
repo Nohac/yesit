@@ -1,19 +1,9 @@
 
-# README for yesit
+# yesit
 
-`yesit` is an open-source tool written in Rust, designed as an enhancement to the classic Unix `yes` command. While retaining the simplicity of `yes`, `yesit` extends its functionality to support interactive applications by automatically responding to prompts.
-
-## Features
-
-- **Customizable Output:** Specify any string as the output instead of the default "y".
-- **Adjustable Interval:** Control the frequency of the output with a customizable interval.
-- **Interactive Application Support:** Designed to work seamlessly with interactive applications, sending the specified output to prompts automatically.
-- **Command Execution:** Execute any command or script and interact with its prompts using `yesit`.
-
-## Requirements
-
-- Rust
-- Any system that supports Rust and the dependencies mentioned in `Cargo.toml`.
+`yesit` is an enhanced version of classic Unix `yes` command. While retaining
+the simplicity of `yes`, `yesit` extends its functionality to support
+interactive applications by automatically responding to prompts.
 
 ## Installation
 
@@ -38,12 +28,6 @@
 yesit [OPTIONS] -- [COMMAND]
 ```
 
-### Options
-
-- `-p`, `--prompt <PROMPT>`: The string to output. Defaults to "y".
-- `-i`, `--interval <INTERVAL>`: The interval between outputs. Defaults to "500ms". Accepts human-readable time formats.
-- `[COMMAND]`: The command to execute and interact with. Must be specified after `--`.
-
 ### Example
 
 Automatically agree to all prompts with "yes" every second for a script:
@@ -51,10 +35,6 @@ Automatically agree to all prompts with "yes" every second for a script:
 ```sh
 yesit -p yes -i 1s -- ./your_script.sh
 ```
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit pull requests, report bugs, or suggest features.
 
 ## License
 
