@@ -10,7 +10,7 @@ interactive applications by automatically responding to prompts.
 1. Ensure you have Rust installed on your system.
 2. Clone the `yesit` repository:
    ```sh
-   git clone <repository-url>
+   git clone https://github.com/Nohac/yesit
    ```
 3. Navigate into the `yesit` directory:
    ```sh
@@ -21,6 +21,10 @@ interactive applications by automatically responding to prompts.
    cargo build --release
    ```
 5. The executable will be located in `target/release/`.
+6. It's also possible to install `yesit` by running:
+   ```sh
+   cargo install --path .
+   ```
 
 ## Usage
 
